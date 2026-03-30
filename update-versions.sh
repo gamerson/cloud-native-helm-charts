@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Find all Chart.yaml files recursively and append .999 to the version field.
-# Only matches 'version:' at the beginning of the line to avoid modifying dependency versions.
-
-find . -name "Chart.yaml" -type f -exec sed -i '/^version:.*\.999$/! s/^version: \(.*\)/version: \1.999/' {} +
-
-echo "Updated versions in all Chart.yaml files."
+# Find all Chart.yaml files
+find . -name "Chart.yaml" | while read -r chart_file; do
+    echo "Processing $chart_file"
+    # Use sed to append -999 to the version line if it doesn't already end in -999
+    # This matches 'version: x.y.z' and turns it into 'version: x.y.z-999'
+    sed -i '/^version: / { /-999$/! s/$/-999/ }' "$chart_file"
+done
