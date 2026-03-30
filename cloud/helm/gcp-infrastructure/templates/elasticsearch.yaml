@@ -14,7 +14,12 @@ spec:
             selfSignedCertificate:
                 disabled: true
     nodeSets:
-        -   count: {{ $search.nodeCount }}
+        -   config:
+                xpack.security.authc.anonymous:
+                    authz_exception: true
+                    roles: superuser
+                    username: anonymous_user
+            count: {{ $search.nodeCount }}
             name: default
             podTemplate:
                 metadata:
@@ -71,6 +76,7 @@ spec:
                         resources:
                             requests:
                                 storage: {{ $search.volumeSize }}
+                        storageClassName: standard-rwo
     version: {{ $search.version }}
 ---
 apiVersion: v1
