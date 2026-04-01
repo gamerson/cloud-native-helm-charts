@@ -274,6 +274,18 @@ entries:
   liferay-gcp-infrastructure:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-01T16:56:39.68890508Z"
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      creates cloud infrastructure resources to support Liferay on GCP.
+    digest: 6aa7ce1fb9373c9453277028c6d9c087b6111924e53d1d71026639031b78ebe0
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-gcp-infrastructure
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-gcp-infrastructure-0.0.6/liferay-gcp-infrastructure-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-03-30T19:20:16.811619824Z"
     description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
       creates cloud infrastructure resources to support Liferay on GCP.
@@ -323,6 +335,18 @@ entries:
   liferay-gcp-infrastructure-provider:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-01T16:56:39.838051141Z"
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      provides cloud infrastructure resource definitions for GCP.
+    digest: 8e476552aaeac9d5ea04ae87165a005fe724fb8698676ee45459f5a45df33235
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-gcp-infrastructure-provider
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-gcp-infrastructure-provider-0.0.3/liferay-gcp-infrastructure-provider-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-03-26T19:22:11.469048895Z"
     description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
       provides cloud infrastructure resource definitions for GCP.
@@ -357,4 +381,4 @@ entries:
     urls:
     - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-gcp-infrastructure-provider-0.0.1-999/liferay-gcp-infrastructure-provider-0.0.1-999.tgz
     version: 0.0.1-999
-generated: "2026-04-01T15:28:23.704466509Z"
+generated: "2026-04-01T16:56:39.838144264Z"
