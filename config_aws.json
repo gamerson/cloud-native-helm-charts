@@ -1,0 +1,18 @@
+{
+    "options": {
+        "provider": "aws",
+        "version:": "1.0.0"
+    },
+    "variables":{
+        "deployment_name": "gma-20260402",
+        "liferay_git_repo_url": "https://github.com/gamerson/cloud-native-gitops-boilerplate",
+        "region": "ca-central-1",
+        "liferay_git_repo_config": {
+            "auth": {
+                "credentials_secret_name": "gma/github/pat"
+            },
+            "source_paths":{},
+            "target": {}
+        }
+    }
+}
