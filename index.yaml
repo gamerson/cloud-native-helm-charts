@@ -3,6 +3,22 @@ entries:
   liferay-aws:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-13T20:24:21.81007048Z"
+    dependencies:
+    - name: liferay-default
+      repository: file://../default
+      version: 0.4.9
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      is optimized for AWS.
+    digest: 7d31d41ce6c174258f158757151ac4c6a2e6bcbac623576c411f9ebbb76b1c74
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-aws
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-aws-0.4.9/liferay-aws-0.4.9.tgz
+    version: 0.4.9
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-03-30T19:20:16.093020607Z"
     dependencies:
     - name: liferay-default
@@ -52,6 +68,18 @@ entries:
   liferay-aws-infrastructure:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-13T20:24:22.01819568Z"
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      creates cloud infrastructure resources to support Liferay.
+    digest: 94aa9ff177456030c27d4a902a879ba688cb6c9e7206b2ed7c1c47e5a5a409cf
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-aws-infrastructure
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-aws-infrastructure-0.4.5/liferay-aws-infrastructure-0.4.5.tgz
+    version: 0.4.5
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-03-30T19:20:16.212650951Z"
     description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
       creates cloud infrastructure resources to support Liferay.
@@ -89,6 +117,24 @@ entries:
   liferay-aws-infrastructure-provider:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-13T20:24:22.159472095Z"
+    dependencies:
+    - condition: liferay-subchart-backup-restore.enabled
+      name: liferay-subchart-backup-restore
+      repository: file://./charts/liferay-subchart-backup-restore
+      version: 0.1.2
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      provides cloud infrastructure resource definitions to support Liferay cloud
+      native infrastructure.
+    digest: fb307a5f1e24b8d95b35b6e7b9cbc453fbde773b806a27249f47303925c0fb7f
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-aws-infrastructure-provider
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-aws-infrastructure-provider-0.3.5/liferay-aws-infrastructure-provider-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-03-26T19:22:10.500347632Z"
     dependencies:
     - condition: liferay-subchart-backup-restore.enabled
@@ -124,6 +170,22 @@ entries:
     - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-aws-infrastructure-provider-0.3.4-999/liferay-aws-infrastructure-provider-0.3.4-999.tgz
     version: 0.3.4-999
   liferay-aws-marketplace:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2026-04-13T20:24:22.352574689Z"
+    dependencies:
+    - name: liferay-aws
+      repository: file://../aws
+      version: 0.4.9
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      is optimized for AWS Marketplace.
+    digest: c156a18752dbdd469a992496de96b9aaf77e383a68e09f1872023713e662a3bc
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-aws-marketplace
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-aws-marketplace-0.2.5/liferay-aws-marketplace-0.2.5.tgz
+    version: 0.2.5
   - apiVersion: v2
     appVersion: latest
     created: "2026-03-30T19:20:16.363660229Z"
@@ -175,6 +237,17 @@ entries:
   liferay-default:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-13T20:24:22.510445563Z"
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform.
+    digest: c849e9a8842f1a3664642ec6a3838053a50f3be35d3977d33a4aae97ad2682ee
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-default
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-default-0.4.9/liferay-default-0.4.9.tgz
+    version: 0.4.9
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-03-30T19:20:16.520676087Z"
     description: Liferay is an all-in-one DXP, LCAP, and Commerce platform.
     digest: 6ea0b983be5dad21b2475ef9cc233b532cf172794fc78907ff8dff6d5b2e4e9d
@@ -207,6 +280,22 @@ entries:
     - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-default-0.4.5/liferay-default-0.4.5.tgz
     version: 0.4.5
   liferay-gcp:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2026-04-13T20:24:22.685074944Z"
+    dependencies:
+    - name: liferay-default
+      repository: file://../default
+      version: 0.4.9
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      is optimized for GCP.
+    digest: 0ec8c003c4042a02ea3d09bc83d9604f4902907fb943a273b929f300ac96a44f
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-gcp
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-gcp-0.0.7/liferay-gcp-0.0.7.tgz
+    version: 0.0.7
   - apiVersion: v2
     appVersion: latest
     created: "2026-03-30T19:20:16.664668338Z"
@@ -274,6 +363,18 @@ entries:
   liferay-gcp-infrastructure:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-13T20:24:22.837473108Z"
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      creates cloud infrastructure resources to support Liferay on GCP.
+    digest: 11bcd1a5dad852167a148f15ab0243a04495022c65c459330b94a05a1c8f2f2b
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-gcp-infrastructure
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-gcp-infrastructure-0.0.7/liferay-gcp-infrastructure-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-04-01T16:56:39.68890508Z"
     description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
       creates cloud infrastructure resources to support Liferay on GCP.
@@ -335,6 +436,27 @@ entries:
   liferay-gcp-infrastructure-provider:
   - apiVersion: v2
     appVersion: latest
+    created: "2026-04-13T20:24:22.981659247Z"
+    dependencies:
+    - condition: liferay-subchart-backup-controller.enabled
+      name: liferay-subchart-backup-controller
+      repository: file://./charts/liferay-subchart-backup-controller
+      version: 0.1.1
+    - condition: liferay-subchart-backup-create.enabled
+      name: liferay-subchart-backup-create
+      repository: file://./charts/liferay-subchart-backup-create
+      version: 0.1.0
+    description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
+      provides cloud infrastructure resource definitions for GCP.
+    digest: 87be34a4bd383440db55d54770f6d91bb3bb574a862a4d509ed5f9bffee9302c
+    icon: https://www-cdn.liferay.com/documents/d/guest/liferay-logo
+    name: liferay-gcp-infrastructure-provider
+    type: application
+    urls:
+    - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-gcp-infrastructure-provider-0.1.1/liferay-gcp-infrastructure-provider-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2026-04-01T16:56:39.838051141Z"
     description: Liferay is an all-in-one DXP, LCAP, and Commerce platform. This chart
       provides cloud infrastructure resource definitions for GCP.
@@ -381,4 +503,4 @@ entries:
     urls:
     - https://github.com/gamerson/cloud-native-helm-charts/releases/download/liferay-gcp-infrastructure-provider-0.0.1-999/liferay-gcp-infrastructure-provider-0.0.1-999.tgz
     version: 0.0.1-999
-generated: "2026-04-01T16:56:39.838144264Z"
+generated: "2026-04-13T20:24:22.981801655Z"
